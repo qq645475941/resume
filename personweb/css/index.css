@@ -1,0 +1,21 @@
+.list-con {
+  border: 1px solid #0E0506;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center; }
+  .list-con .list-item {
+    border: 1px solid red;
+    margin: 2px 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: antiquewhite; }
+  .list-con .list-item:hover {
+    background-color: aqua; }
+
+.view-con {
+  position: relative;
+  display: flex;
+  flex-direction: row; }
+
+/*# sourceMappingURL=index.css.map */

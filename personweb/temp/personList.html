@@ -1,0 +1,14 @@
+<div class="list-con">
+    <div class="list-item" ng-repeat="item in perList" ui-sref="detail({id:item.did})">
+        {{item.name}}
+    </div>
+    <div class="list-item"  ng-click="changeState()">添加</div>
+    <div ng-show="show">
+        <input type="text" placeholder="名字" ng-model="name" value="{{name}}">
+        <input type="text" placeholder="技能" ng-model="skill" value="{{skill}}">
+        <div ng-click="addData()">确定</div>
+    </div>
+
+
+</div>
+

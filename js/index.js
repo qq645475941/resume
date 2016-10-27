@@ -21,6 +21,12 @@ myApp.config(function ($stateProvider) {
             // console.log(data);
             $scope.perList = data.list;
             $scope.show=false;
+            var perList=data.list;
+            // console.log(perList);
+            var ss=perList.find(function (e) {
+                console.log(e);
+            });
+            console.log(ss);
             $scope.changeState=function () {
                 if(!$scope.show){
                     $scope.show=true;
@@ -31,7 +37,7 @@ myApp.config(function ($stateProvider) {
             $scope.name='张三丰';
             $scope.skill='太极拳';
             $scope.addData=function () {
-                console.log($scope.name);
+                // console.log($scope.name);
                 var addNum={"name":$scope.name,"skill":$scope.name.skill}
                 $scope.perList.push(addNum);
                 $scope.show=false;
@@ -62,8 +68,8 @@ myApp.config(function ($stateProvider) {
             'add@': {
                 templateUrl: 'temp/add.html',
                 controller:function ($rootScope,$scope) {
-                    console.log($rootScope);
-                    console.log($scope);
+                    // console.log($rootScope);
+                    // console.log($scope);
                 }
             }
         }
